@@ -1,0 +1,35 @@
+ [22-Aug-2025 12:04:08 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Data too long for column 'course' at row 1 in /home/campusedge/public_html/cstm_quiz/index.php:50
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/index.php(50): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/index.php on line 50
+[22-Aug-2025 12:08:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Data too long for column 'course' at row 1 in /home/campusedge/public_html/cstm_quiz/index.php:86
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/index.php(86): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/index.php on line 86
+[22-Aug-2025 12:17:59 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/index.php on line 8
+[22-Aug-2025 12:18:02 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/index.php on line 8
+[22-Aug-2025 12:18:02 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/index.php on line 8
+[22-Aug-2025 12:18:02 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/index.php on line 8
+[22-Aug-2025 12:18:03 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/index.php on line 8
+[22-Aug-2025 12:18:08 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/index.php on line 8
+[22-Aug-2025 12:18:30 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/index.php on line 8
+[22-Aug-2025 12:18:30 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/campusedge/public_html/cstm_quiz/index.php:1) in /home/campusedge/public_html/cstm_quiz/index.php on line 96
+[25-Aug-2025 06:48:18 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Data too long for column 'course' at row 1 in /home/campusedge/public_html/cstm_quiz/index.php:84
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/index.php(84): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/index.php on line 84
+[25-Aug-2025 06:48:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Data too long for column 'course' at row 1 in /home/campusedge/public_html/cstm_quiz/index.php:84
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/index.php(84): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/index.php on line 84
+[25-Aug-2025 06:49:33 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Data too long for column 'course' at row 1 in /home/campusedge/public_html/cstm_quiz/index.php:84
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/index.php(84): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/index.php on line 84
+[25-Aug-2025 18:46:21 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/index.php on line 2
+[25-Aug-2025 18:47:57 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/index.php on line 2

@@ -1,0 +1,1290 @@
+[24-Nov-2024 08:46:46 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/solitaireinfo/public_html/cstm_quiz/admin/login.php:7) in /home/solitaireinfo/public_html/cstm_quiz/admin/login.php on line 27
+[24-Nov-2024 08:48:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/solitaireinfo/public_html/cstm_quiz/admin/login.php:7) in /home/solitaireinfo/public_html/cstm_quiz/admin/login.php on line 27
+[24-Nov-2024 08:55:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/solitaireinfo/public_html/cstm_quiz/admin/login.php:7) in /home/solitaireinfo/public_html/cstm_quiz/admin/login.php on line 27
+[24-Nov-2024 08:56:24 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/solitaireinfo/public_html/cstm_quiz/admin/login.php:7) in /home/solitaireinfo/public_html/cstm_quiz/admin/login.php on line 28
+[24-Nov-2024 08:57:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/solitaireinfo/public_html/cstm_quiz/admin/login.php:7) in /home/solitaireinfo/public_html/cstm_quiz/admin/login.php on line 28
+[24-Nov-2024 08:57:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/solitaireinfo/public_html/cstm_quiz/admin/login.php:7) in /home/solitaireinfo/public_html/cstm_quiz/admin/login.php on line 29
+[24-Nov-2024 08:58:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/solitaireinfo/public_html/cstm_quiz/admin/login.php:7) in /home/solitaireinfo/public_html/cstm_quiz/admin/login.php on line 29
+[24-Nov-2024 08:58:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/solitaireinfo/public_html/cstm_quiz/admin/login.php:7) in /home/solitaireinfo/public_html/cstm_quiz/admin/login.php on line 29
+[24-Nov-2024 08:59:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/solitaireinfo/public_html/cstm_quiz/admin/login.php:7) in /home/solitaireinfo/public_html/cstm_quiz/admin/login.php on line 32
+[26-Nov-2024 11:14:22 UTC] PHP Fatal error:  Uncaught ValueError: explode(): Argument #1 ($separator) cannot be empty in /home/solitaireinfo/public_html/cstm_quiz/admin/profile.php:167
+Stack trace:
+#0 /home/solitaireinfo/public_html/cstm_quiz/admin/profile.php(167): explode('', 'rawurldecode')
+#1 {main}
+  thrown in /home/solitaireinfo/public_html/cstm_quiz/admin/profile.php on line 167
+[26-Nov-2024 11:14:24 UTC] PHP Fatal error:  Uncaught ValueError: explode(): Argument #1 ($separator) cannot be empty in /home/solitaireinfo/public_html/cstm_quiz/admin/profile.php:167
+Stack trace:
+#0 /home/solitaireinfo/public_html/cstm_quiz/admin/profile.php(167): explode('', 'rawurldecode')
+#1 {main}
+  thrown in /home/solitaireinfo/public_html/cstm_quiz/admin/profile.php on line 167
+[26-Nov-2024 11:14:28 UTC] PHP Fatal error:  Uncaught ValueError: explode(): Argument #1 ($separator) cannot be empty in /home/solitaireinfo/public_html/cstm_quiz/admin/profile.php:167
+Stack trace:
+#0 /home/solitaireinfo/public_html/cstm_quiz/admin/profile.php(167): explode('', 'rawurldecode')
+#1 {main}
+  thrown in /home/solitaireinfo/public_html/cstm_quiz/admin/profile.php on line 167
+[29-Nov-2024 02:28:18 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'expire_at' in 'field list' in /home/solitaireinfo/public_html/cstm_quiz/admin/generate_temp_link.php:19
+Stack trace:
+#0 /home/solitaireinfo/public_html/cstm_quiz/admin/generate_temp_link.php(19): mysqli->prepare('INSERT INTO tem...')
+#1 {main}
+  thrown in /home/solitaireinfo/public_html/cstm_quiz/admin/generate_temp_link.php on line 19
+[30-Nov-2024 06:55:14 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/solitaireinfo/public_html/cstm_quiz/admin/index.php on line 19
+[30-Nov-2024 06:55:22 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/solitaireinfo/public_html/cstm_quiz/admin/index.php on line 19
+[30-Nov-2024 06:56:37 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/solitaireinfo/public_html/cstm_quiz/admin/index.php on line 19
+[30-Nov-2024 06:57:02 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/solitaireinfo/public_html/cstm_quiz/admin/index.php on line 19
+[30-Nov-2024 06:57:10 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/solitaireinfo/public_html/cstm_quiz/admin/index.php on line 19
+[30-Nov-2024 06:57:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/solitaireinfo/public_html/cstm_quiz/admin/index.php:1) in /home/solitaireinfo/public_html/cstm_quiz/admin/index.php on line 39
+[30-Nov-2024 06:59:15 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/solitaireinfo/public_html/cstm_quiz/admin/index.php on line 19
+[30-Nov-2024 06:59:24 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/solitaireinfo/public_html/cstm_quiz/admin/index.php on line 19
+[30-Nov-2024 06:59:30 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/solitaireinfo/public_html/cstm_quiz/admin/index.php on line 19
+[30-Nov-2024 06:59:30 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/solitaireinfo/public_html/cstm_quiz/admin/index.php:1) in /home/solitaireinfo/public_html/cstm_quiz/admin/index.php on line 39
+[30-Nov-2024 07:00:30 UTC] PHP Parse error:  syntax error, unexpected variable "$_SESSION", expecting "," or ";" in /home/solitaireinfo/public_html/cstm_quiz/admin/index.php on line 40
+[30-Nov-2024 07:00:36 UTC] PHP Parse error:  syntax error, unexpected variable "$_SESSION", expecting "," or ";" in /home/solitaireinfo/public_html/cstm_quiz/admin/index.php on line 40
+[30-Nov-2024 07:00:57 UTC] PHP Parse error:  syntax error, unexpected variable "$_SESSION", expecting "," or ";" in /home/solitaireinfo/public_html/cstm_quiz/admin/index.php on line 40
+[30-Nov-2024 07:01:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/solitaireinfo/public_html/cstm_quiz/admin/index.php:3) in /home/solitaireinfo/public_html/cstm_quiz/admin/index.php on line 41
+[30-Nov-2024 07:02:05 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/solitaireinfo/public_html/cstm_quiz/admin/index.php:3) in /home/solitaireinfo/public_html/cstm_quiz/admin/index.php on line 41
+[30-Nov-2024 07:03:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/solitaireinfo/public_html/cstm_quiz/admin/index.php:3) in /home/solitaireinfo/public_html/cstm_quiz/admin/index.php on line 41
+[30-Nov-2024 07:04:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/solitaireinfo/public_html/cstm_quiz/admin/index.php:19) in /home/solitaireinfo/public_html/cstm_quiz/admin/index.php on line 21
+[20-Aug-2025 05:13:28 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:13:29 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:13:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[20-Aug-2025 05:13:49 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[20-Aug-2025 05:13:49 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[20-Aug-2025 05:13:51 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:13:51 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:13:52 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[20-Aug-2025 05:13:52 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[20-Aug-2025 05:13:52 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[20-Aug-2025 05:13:52 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[20-Aug-2025 05:13:52 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[20-Aug-2025 05:13:52 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[20-Aug-2025 05:13:53 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[20-Aug-2025 05:13:53 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[20-Aug-2025 05:13:56 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[20-Aug-2025 05:14:00 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:14:00 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:14:10 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[20-Aug-2025 05:14:10 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[20-Aug-2025 05:14:13 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:14:13 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:15:28 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[20-Aug-2025 05:15:52 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:15:52 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:16:11 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[20-Aug-2025 05:16:20 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:16:20 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:16:31 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:16:31 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:16:34 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:16:34 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:19:18 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:19:18 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:19:22 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[20-Aug-2025 05:20:02 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:20:03 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:20:08 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[20-Aug-2025 05:20:49 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:20:49 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:22:41 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[20-Aug-2025 05:22:41 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[20-Aug-2025 05:23:09 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[20-Aug-2025 05:23:24 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[20-Aug-2025 05:23:24 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[20-Aug-2025 05:23:26 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:23:27 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:24:29 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[20-Aug-2025 05:24:29 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[20-Aug-2025 05:24:51 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:24:51 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:25:15 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[20-Aug-2025 05:34:58 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:34:58 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:35:04 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[20-Aug-2025 05:35:04 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[20-Aug-2025 05:35:05 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[20-Aug-2025 05:35:07 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[20-Aug-2025 05:35:07 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[20-Aug-2025 05:35:07 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:35:07 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:48:52 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:48:52 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:50:08 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[20-Aug-2025 05:50:08 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[20-Aug-2025 05:50:11 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[20-Aug-2025 05:51:19 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:51:20 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 05:51:22 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[20-Aug-2025 10:11:26 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 10:11:26 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 10:11:34 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[20-Aug-2025 10:11:34 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[20-Aug-2025 10:11:35 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 10:11:35 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 12:07:35 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 12:07:35 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 12:07:39 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[20-Aug-2025 12:07:39 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[20-Aug-2025 12:07:40 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 12:07:40 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 12:15:51 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 12:15:51 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 12:19:25 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[20-Aug-2025 12:19:26 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[21-Aug-2025 05:28:25 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[21-Aug-2025 05:28:25 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[21-Aug-2025 06:06:22 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[21-Aug-2025 06:06:22 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[21-Aug-2025 11:15:50 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[21-Aug-2025 11:15:50 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[21-Aug-2025 11:51:17 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[21-Aug-2025 11:51:17 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[21-Aug-2025 11:51:18 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[21-Aug-2025 11:51:19 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[21-Aug-2025 11:51:26 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[21-Aug-2025 11:51:26 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[21-Aug-2025 11:51:31 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[21-Aug-2025 11:51:31 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[21-Aug-2025 11:51:41 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[21-Aug-2025 11:51:41 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[21-Aug-2025 12:11:03 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[21-Aug-2025 12:11:03 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[21-Aug-2025 12:11:10 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[21-Aug-2025 12:11:10 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[21-Aug-2025 12:13:06 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[21-Aug-2025 12:13:06 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[21-Aug-2025 12:15:26 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[21-Aug-2025 12:15:26 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[21-Aug-2025 12:26:56 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[21-Aug-2025 12:26:56 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 04:46:14 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 04:46:14 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 04:46:15 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 04:46:15 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 04:46:18 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 04:46:18 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 04:46:48 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 04:46:49 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 04:46:49 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[22-Aug-2025 04:46:49 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[22-Aug-2025 05:03:02 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 05:03:02 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 05:14:51 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 05:14:51 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 05:37:48 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[22-Aug-2025 05:37:48 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[22-Aug-2025 08:34:17 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 08:34:18 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 08:34:23 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 08:34:23 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 08:34:23 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 08:34:23 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 08:34:23 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 08:34:23 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 08:34:29 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 08:34:29 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 08:34:30 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[22-Aug-2025 08:34:30 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[22-Aug-2025 08:34:32 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 08:34:32 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 09:10:12 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 09:10:12 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 09:10:18 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:10:18 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:10:18 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:10:18 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:10:18 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:10:18 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:10:18 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:10:18 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:10:18 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:10:18 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:10:18 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:10:18 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:27:56 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 09:27:56 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 09:28:01 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:28:01 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:28:01 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:28:01 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:28:01 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:28:01 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:28:01 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:28:01 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:28:01 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:28:01 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:28:01 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:28:01 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:28:22 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[22-Aug-2025 09:28:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[22-Aug-2025 09:28:24 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 09:28:24 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 09:28:34 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 09:28:34 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 09:28:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:28:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:28:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:28:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:28:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:28:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:28:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:28:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:28:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:28:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:28:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:28:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:29:10 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[22-Aug-2025 09:29:10 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[22-Aug-2025 09:29:18 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:29:18 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:29:18 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:29:18 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:29:18 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:29:18 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:29:18 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:29:18 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:29:18 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:29:18 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:29:18 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 09:29:18 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:48:59 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:48:59 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:48:59 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:48:59 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:48:59 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:48:59 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:48:59 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:48:59 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:48:59 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:48:59 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:48:59 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:48:59 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:48:59 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:48:59 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:49:22 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 10:49:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:49:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:49:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:49:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:49:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:49:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:49:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:49:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:49:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:49:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:49:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:49:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:49:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:49:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 10:49:52 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 10:49:52 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 12:35:26 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 12:35:27 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 12:35:45 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 12:35:45 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 12:35:45 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 12:35:45 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 12:35:56 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 12:35:56 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 12:36:00 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 12:36:00 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 12:36:00 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 12:36:00 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 12:36:54 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 12:37:19 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[22-Aug-2025 12:37:19 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[22-Aug-2025 12:37:21 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 12:37:22 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 12:37:46 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 12:38:05 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 12:38:05 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 12:38:09 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 12:38:10 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 12:38:11 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 12:38:11 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 12:38:12 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 12:38:12 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 12:38:38 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[22-Aug-2025 12:38:38 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[22-Aug-2025 12:38:46 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 18:59:23 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 18:59:24 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 18:59:29 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 18:59:29 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 18:59:29 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 18:59:29 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 18:59:29 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 18:59:29 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 18:59:29 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 18:59:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 18:59:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 18:59:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 18:59:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 18:59:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 18:59:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 18:59:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:01:10 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 19:01:10 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 19:01:14 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 19:01:14 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 19:01:18 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 19:01:18 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 19:04:43 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 19:04:43 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 19:07:26 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 19:07:26 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 19:07:29 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:07:29 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:07:29 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:07:29 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:07:29 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:07:29 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:07:29 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:13 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 19:23:14 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[22-Aug-2025 19:23:17 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[22-Aug-2025 19:23:17 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[22-Aug-2025 19:23:19 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:19 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:19 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:19 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:19 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:19 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:19 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:19 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:21 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:21 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:21 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:21 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:21 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:21 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:21 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:21 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:22 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:22 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:22 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:22 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:22 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:22 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:22 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:22 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:24 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:24 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:24 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:24 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:24 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:24 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:24 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:24 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:25 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:25 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:25 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:25 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:25 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:25 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:25 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:25 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:25 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:25 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:25 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:25 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:25 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:25 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:25 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:25 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[22-Aug-2025 19:23:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:27:57 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[23-Aug-2025 15:27:57 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[23-Aug-2025 15:28:03 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[23-Aug-2025 15:28:03 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[23-Aug-2025 15:28:05 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:28:05 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:28:05 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:28:05 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:28:05 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:28:05 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:28:05 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:28:05 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:28:05 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:28:05 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:28:37 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[23-Aug-2025 15:28:37 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[23-Aug-2025 15:28:39 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[23-Aug-2025 15:28:39 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[23-Aug-2025 15:28:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:28:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:28:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:28:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:28:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:28:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:28:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:28:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:28:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:28:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:40:45 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[23-Aug-2025 15:40:45 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[23-Aug-2025 15:40:48 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[23-Aug-2025 15:40:49 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[23-Aug-2025 15:40:53 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:40:53 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:40:53 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:40:53 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:40:53 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:40:53 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:40:53 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:40:53 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:40:53 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:40:53 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:41:03 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:41:03 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:41:03 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:41:03 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:41:03 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:41:03 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:41:03 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:41:03 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:41:03 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:41:03 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[23-Aug-2025 15:53:09 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[23-Aug-2025 15:53:09 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[23-Aug-2025 15:53:10 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[23-Aug-2025 15:53:10 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[25-Aug-2025 05:40:18 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[25-Aug-2025 05:40:18 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[25-Aug-2025 05:40:22 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[25-Aug-2025 05:40:22 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[25-Aug-2025 05:40:37 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[25-Aug-2025 05:40:37 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[25-Aug-2025 05:40:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:40:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:40:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:40:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:40:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:40:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:40:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:40:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:40:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:40:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:40:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:40:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:40:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:40:40 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:40:45 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 05:40:45 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 05:40:46 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[25-Aug-2025 05:40:46 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 2
+[25-Aug-2025 05:53:35 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'campusedge_quiz.quiz_answers' doesn't exist in /home/campusedge/public_html/cstm_quiz/admin/student.php:24
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/student.php(24): mysqli->query('\r\n    SELECT \r\n...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 24
+[25-Aug-2025 05:53:47 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 05:53:47 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 05:53:49 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 05:53:49 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 05:53:50 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:50 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:50 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:50 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:50 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:50 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:50 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:50 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:50 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:50 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:50 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:50 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:50 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:50 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:52 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:52 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:52 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:52 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:52 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:52 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:52 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:52 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:52 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:52 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:52 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:52 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:52 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 05:53:52 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:02:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'is_published' in 'SELECT' in /home/campusedge/public_html/cstm_quiz/admin/student.php:25
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/student.php(25): mysqli->query('SELECT id, titl...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 25
+[25-Aug-2025 06:02:20 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'is_published' in 'SELECT' in /home/campusedge/public_html/cstm_quiz/admin/student.php:25
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/student.php(25): mysqli->query('SELECT id, titl...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 25
+[25-Aug-2025 06:03:16 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'is_published' in 'SELECT' in /home/campusedge/public_html/cstm_quiz/admin/student.php:31
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/student.php(31): mysqli->query('SELECT id, titl...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 31
+[25-Aug-2025 06:03:48 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'is_published' in 'SELECT' in /home/campusedge/public_html/cstm_quiz/admin/student.php:31
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/student.php(31): mysqli->query('SELECT id, titl...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 31
+[25-Aug-2025 06:04:17 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'r.created_at' in 'SELECT' in /home/campusedge/public_html/cstm_quiz/admin/student.php:70
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/student.php(70): mysqli->query('\r\n    SELECT \r\n...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 70
+[25-Aug-2025 06:06:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'r.created_at' in 'SELECT' in /home/campusedge/public_html/cstm_quiz/admin/student.php:70
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/student.php(70): mysqli->query('\r\n    SELECT \r\n...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 70
+[25-Aug-2025 06:06:29 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'r.created_at' in 'SELECT' in /home/campusedge/public_html/cstm_quiz/admin/student.php:61
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/student.php(61): mysqli->query('\r\n    SELECT \r\n...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 61
+[25-Aug-2025 06:13:20 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 's.is_unlocked' in 'SELECT' in /home/campusedge/public_html/cstm_quiz/admin/student.php:39
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/student.php(39): mysqli->query('\r\n    SELECT \r\n...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 39
+[25-Aug-2025 06:15:41 UTC] PHP Parse error:  Unclosed '(' on line 217 in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 218
+[25-Aug-2025 06:15:42 UTC] PHP Parse error:  Unclosed '(' on line 217 in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 218
+[25-Aug-2025 06:15:56 UTC] PHP Parse error:  Unclosed '(' on line 209 in /home/campusedge/public_html/cstm_quiz/admin/student.php on line 210
+[25-Aug-2025 06:52:35 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 06:52:35 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 06:52:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:46 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:46 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:46 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:46 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:46 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:46 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:46 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:46 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:46 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:46 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:46 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:46 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:46 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:46 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:46 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:46 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:46 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:46 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:46 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:46 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:52:46 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:35 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 06:53:35 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 06:53:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:43 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 06:53:43 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 06:53:48 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:48 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:48 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:48 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:48 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:48 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:48 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:48 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:48 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:48 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:48 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:48 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:48 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:48 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:48 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:48 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:48 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:48 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:48 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:48 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:48 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 06:53:52 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 06:53:52 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 07:01:24 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 07:01:47 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 07:08:49 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 07:08:49 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 07:11:13 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 07:11:23 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 07:46:41 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 07:46:41 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 07:47:33 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 07:48:03 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 07:48:03 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 07:48:54 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 07:48:54 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 07:48:56 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 07:48:58 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 07:49:05 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 07:49:05 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 07:49:07 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 07:49:09 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 07:49:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 07:49:09 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 07:49:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 07:49:23 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 07:49:23 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 07:49:50 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 07:49:50 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 07:49:52 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 07:52:39 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 07:52:39 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 07:53:21 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 07:53:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 07:53:22 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 07:53:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 07:53:24 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 07:53:24 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 07:53:25 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 07:53:25 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:03:48 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 09:03:48 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 09:03:51 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:03:51 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:05:02 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 09:05:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 09:05:04 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:05:04 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:10:21 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:10:21 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:10:23 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 09:10:23 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 09:12:16 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:12:16 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:12:18 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 09:12:18 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 09:12:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:12:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:13:07 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:13:07 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:13:14 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 09:13:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 09:13:44 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 09:13:44 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 09:16:08 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 09:16:08 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 09:16:10 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:16:10 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:17:34 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:17:34 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:50:22 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 09:50:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 09:50:24 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:50:24 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:53:50 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 09:53:50 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 09:53:50 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 09:53:50 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 09:53:52 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:53:52 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:55:07 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 09:55:07 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 09:55:08 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:55:08 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:56:06 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:56:06 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:56:08 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:56:08 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:57:14 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:57:14 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:58:07 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 09:58:07 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:09:04 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:09:04 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:09:07 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:09:07 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:09:08 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:09:08 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:09:11 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:09:11 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:09:12 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:09:12 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:09:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:09:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:09:41 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:09:41 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:09:41 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:09:41 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:09:43 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:09:43 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:27:09 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:27:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:28:43 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:28:43 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:28:52 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:28:52 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:29:17 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:29:17 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:31:28 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:31:28 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:31:28 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:31:28 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:31:41 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:31:41 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:31:43 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:31:43 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:31:43 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:31:43 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:33:29 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:33:29 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:33:30 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:33:30 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:35:02 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:35:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:35:02 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:35:02 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:36:11 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:36:11 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:36:15 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:36:15 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:36:19 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:36:19 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:38:13 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:38:13 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:46:59 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:46:59 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:47:15 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:47:15 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:47:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:47:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:48:09 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:48:09 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:48:12 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:48:12 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:48:14 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:48:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:48:43 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:48:43 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:49:07 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:49:07 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:49:55 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:49:55 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:49:58 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:49:58 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:50:04 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:50:04 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:50:56 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:50:56 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:51:12 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:51:12 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:51:46 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:51:46 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:52:04 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:52:04 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:52:04 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:52:04 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:52:17 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:52:17 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:53:16 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:53:16 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:53:17 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:53:17 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:53:21 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:53:21 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:53:22 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:53:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:53:26 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:53:26 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:53:58 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:53:58 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:54:01 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:54:01 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:54:02 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:54:02 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:54:04 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:54:04 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:55:06 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:55:06 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:55:09 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:55:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:55:25 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:55:25 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:55:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:55:27 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:56:08 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:56:08 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:56:19 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:56:19 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:56:20 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:56:20 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:56:20 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:56:20 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:56:25 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:56:25 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:56:26 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:56:26 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:56:31 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:56:31 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:57:06 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:57:06 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:57:10 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 10:57:10 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 10:57:41 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 10:57:41 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 11:13:34 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 11:13:34 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 11:13:34 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 11:32:10 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 11:32:10 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 11:32:13 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 11:32:13 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 11:32:13 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 11:34:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 11:34:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 11:34:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 11:36:56 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 11:36:56 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 11:36:56 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 11:38:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 11:38:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 11:38:30 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 11:43:48 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 11:43:48 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 11:44:43 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 11:44:43 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 11:44:50 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 11:44:50 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 11:44:50 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 12:54:19 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 12:54:19 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 18:28:52 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 18:28:52 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 18:28:52 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 18:29:14 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 18:29:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 18:30:35 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 18:30:35 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 18:30:37 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 18:30:37 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 18:30:37 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 18:31:02 UTC] PHP Warning:  Undefined variable $database in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 8
+[25-Aug-2025 18:31:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/campusedge/public_html/cstm_quiz/admin/branch.php:43
+Stack trace:
+#0 /home/campusedge/public_html/cstm_quiz/admin/branch.php(43): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home/campusedge/public_html/cstm_quiz/admin/branch.php on line 43
+[25-Aug-2025 18:31:13 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 18:31:13 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115
+[25-Aug-2025 18:31:13 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/campusedge/public_html/cstm_quiz/admin/result.php on line 115

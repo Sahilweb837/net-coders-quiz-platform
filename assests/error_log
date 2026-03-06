@@ -1,0 +1,15 @@
+[26-Nov-2024 11:18:30 UTC] PHP Fatal error:  Uncaught ValueError: explode(): Argument #1 ($separator) cannot be empty in /home/solitaireinfo/public_html/cstm_quiz/assests/profile.php:148
+Stack trace:
+#0 /home/solitaireinfo/public_html/cstm_quiz/assests/profile.php(148): explode('', 'rawurldecode')
+#1 {main}
+  thrown in /home/solitaireinfo/public_html/cstm_quiz/assests/profile.php on line 148
+[26-Nov-2024 11:18:31 UTC] PHP Fatal error:  Uncaught ValueError: explode(): Argument #1 ($separator) cannot be empty in /home/solitaireinfo/public_html/cstm_quiz/assests/profile.php:148
+Stack trace:
+#0 /home/solitaireinfo/public_html/cstm_quiz/assests/profile.php(148): explode('', 'rawurldecode')
+#1 {main}
+  thrown in /home/solitaireinfo/public_html/cstm_quiz/assests/profile.php on line 148
+[26-Nov-2024 11:18:33 UTC] PHP Fatal error:  Uncaught ValueError: explode(): Argument #1 ($separator) cannot be empty in /home/solitaireinfo/public_html/cstm_quiz/assests/profile.php:148
+Stack trace:
+#0 /home/solitaireinfo/public_html/cstm_quiz/assests/profile.php(148): explode('', 'rawurldecode')
+#1 {main}
+  thrown in /home/solitaireinfo/public_html/cstm_quiz/assests/profile.php on line 148
