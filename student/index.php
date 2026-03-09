@@ -1262,7 +1262,7 @@ $first_name = explode(' ', $student_name)[0];
     <!-- WHITE HEADER WITH LOGO -->
     <header class="white-header">
         <div class="logo-area">
-            <img src="../assests/logo.png" alt="NetCoders" class="logo-img" onerror="this.src='https://via.placeholder.com/120x48?text=NETCODERS'">
+            <img src="../assests/logo1.png" alt="NetCoders" class="logo-img" onerror="this.src='https://via.placeholder.com/120x48?text=NETCODERS'">
             <div class="brand-text">
              </div>
         </div>
@@ -1386,11 +1386,9 @@ $first_name = explode(' ', $student_name)[0];
 
                         <?php if ($is_completed): ?>
                             <div class="status-badge badge-completed">
-                                <i class="fas fa-check-circle"></i> Completed - View Results
+                                <i class="fas fa-check-circle"></i> Completed  
                             </div>
-                            <a href="view_result.php?quiz_id=<?= $critical_quiz['id'] ?>" class="quiz-button btn-view">
-                                <i class="fas fa-chart-bar"></i> View Results
-                            </a>
+                                 </a>
                         <?php else: ?>
                             <div class="status-badge badge-pending">
                                 <i class="fas fa-hourglass-half"></i> Ready to Start

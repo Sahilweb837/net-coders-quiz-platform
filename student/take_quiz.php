@@ -19,99 +19,85 @@ if ($checkStmt) {
     $checkStmt->execute();
     $checkStmt->store_result();
     
-    // If already taken, show already submitted card
-    $already_submitted = $checkStmt->num_rows > 0;
-} else {
-    $already_submitted = false;
+    if ($checkStmt->num_rows > 0) {
+        header("Location: ../student/index.php?error=already_submitted");
+        exit;
+    }
 }
 
-// Also check quiz_responses table for any responses (backup check)
+// Also check quiz_responses table
 $respStmt = $conn->prepare("SELECT id FROM quiz_responses WHERE student_id = ? AND quiz_id = ? LIMIT 1");
 if ($respStmt) {
     $respStmt->bind_param("ii", $student_id, $quiz_id);
     $respStmt->execute();
     $respStmt->store_result();
-    $has_responses = $respStmt->num_rows > 0;
-} else {
-    $has_responses = false;
-}
-
-// If already submitted, show message
-$show_already_submitted = $already_submitted || $has_responses;
-
-// Only fetch quiz data if not already submitted
-if (!$show_already_submitted) {
-    // Fetch quiz info
-    $quizStmt = $conn->prepare("SELECT * FROM quizzes WHERE id = ?");
-    $quizStmt->bind_param("i", $quiz_id);
-    $quizStmt->execute();
-    $quiz = $quizStmt->get_result()->fetch_assoc();
-
-    // If quiz doesn't exist
-    if (!$quiz) {
-        header("Location: ../student/index.php?error=quiz_not_found");
+    if ($respStmt->num_rows > 0) {
+        header("Location: ../student/index.php?error=already_submitted");
         exit;
     }
-
-    // Fetch questions
-    $qStmt = $conn->prepare("SELECT * FROM questions WHERE quiz_id = ? ORDER BY id ASC");
-    $qStmt->bind_param("i", $quiz_id);
-    $qStmt->execute();
-    $questions_result = $qStmt->get_result();
-    
-    // Convert to array for shuffling
-    $questions_array = [];
-    while ($row = $questions_result->fetch_assoc()) {
-        $questions_array[] = $row;
-    }
-
-    // If no questions
-    if (count($questions_array) === 0) {
-        header("Location: ../student/index.php?error=no_questions");
-        exit;
-    }
-
-    // ===== SHUFFLE QUESTIONS RANDOMLY PER USER =====
-    // Use a seed based on student_id + quiz_id for consistent shuffling per user
-    $seed = crc32($student_id . '_' . $quiz_id);
-    srand($seed);
-    
-    // Fisher-Yates shuffle with seeded random
-    for ($i = count($questions_array) - 1; $i > 0; $i--) {
-        $j = rand(0, $i);
-        $temp = $questions_array[$i];
-        $questions_array[$i] = $questions_array[$j];
-        $questions_array[$j] = $temp;
-    }
-    
-    // Store shuffled questions in session for this quiz
-    $_SESSION['shuffled_questions_' . $quiz_id] = $questions_array;
-    
-    // Also shuffle options for each question
-    foreach ($questions_array as &$question) {
-        $options = [];
-        if (!empty($question['option_a'])) $options[] = ['key' => 'option_a', 'value' => $question['option_a']];
-        if (!empty($question['option_b'])) $options[] = ['key' => 'option_b', 'value' => $question['option_b']];
-        if (!empty($question['option_c'])) $options[] = ['key' => 'option_c', 'value' => $question['option_c']];
-        if (!empty($question['option_d'])) $options[] = ['key' => 'option_d', 'value' => $question['option_d']];
-        
-        // Shuffle options
-        shuffle($options);
-        
-        // Store shuffled options back
-        $question['shuffled_options'] = $options;
-    }
-    
-    $questions = $questions_array;
-    $total_questions = count($questions);
 }
 
-// Default timer: 20 minutes (1200 seconds)
-$remaining_time = $_SESSION['remaining_time'] ?? 1200;
+// Fetch quiz info
+$quizStmt = $conn->prepare("SELECT * FROM quizzes WHERE id = ?");
+$quizStmt->bind_param("i", $quiz_id);
+$quizStmt->execute();
+$quiz = $quizStmt->get_result()->fetch_assoc();
+
+if (!$quiz) {
+    header("Location: ../student/index.php?error=quiz_not_found");
+    exit;
+}
+
+// ===== FETCH ALL QUESTIONS =====
+$qStmt = $conn->prepare("SELECT * FROM questions WHERE quiz_id = ?");
+$qStmt->bind_param("i", $quiz_id);
+$qStmt->execute();
+$all_questions_result = $qStmt->get_result();
+
+$all_questions = [];
+while ($row = $all_questions_result->fetch_assoc()) {
+    $all_questions[] = $row;
+}
+
+if (count($all_questions) === 0) {
+    header("Location: ../student/index.php?error=no_questions");
+    exit;
+}
+
+// ===== SELECT 20 RANDOM QUESTIONS FOR THIS USER =====
+$seed = crc32('user_' . $student_id . '_quiz_' . $quiz_id);
+srand($seed);
+
+$shuffled_questions = $all_questions;
+shuffle($shuffled_questions);
+
+// Take first 20 questions
+$selected_questions = array_slice($shuffled_questions, 0, min(20, count($shuffled_questions)));
+$total_questions = count($selected_questions);
+
+// Store selected questions in session
+$_SESSION['selected_questions_' . $quiz_id] = $selected_questions;
+
+// Shuffle options for each selected question
+foreach ($selected_questions as &$question) {
+    $options = [];
+    if (!empty($question['option_a'])) $options[] = ['key' => 'a', 'value' => $question['option_a']];
+    if (!empty($question['option_b'])) $options[] = ['key' => 'b', 'value' => $question['option_b']];
+    if (!empty($question['option_c'])) $options[] = ['key' => 'c', 'value' => $question['option_c']];
+    if (!empty($question['option_d'])) $options[] = ['key' => 'd', 'value' => $question['option_d']];
+    
+    shuffle($options);
+    $question['shuffled_options'] = $options;
+}
+
+$questions = $selected_questions;
+
+// Timer: 30 minutes for 20 questions
+$remaining_time = $_SESSION['remaining_time'] ?? 1800;
 $minutes = floor($remaining_time / 60);
 $seconds = $remaining_time % 60;
 
-// Get student name for greeting
+// Get student name
 $nameStmt = $conn->prepare("SELECT name FROM students WHERE id = ?");
 $nameStmt->bind_param("i", $student_id);
 $nameStmt->execute();
@@ -124,7 +110,7 @@ $first_name = explode(' ', $student_name)[0];
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover" />
-    <title>NETCODERS - <?= !$show_already_submitted ? htmlspecialchars($quiz['title'] ?? 'Quiz') : 'Quiz Already Submitted' ?></title>
+    <title>NETCODERS - <?= htmlspecialchars($quiz['title'] ?? 'Quiz') ?> (20 Questions)</title>
     
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -153,7 +139,6 @@ $first_name = explode(' ', $student_name)[0];
             --text-muted: #94a3b8;
             --border-color: #1e2a3a;
             --success: #10b981;
-            --success-bg: rgba(16, 185, 129, 0.1);
             --warning: #f59e0b;
             --danger: #ef4444;
             --glass-bg: rgba(21, 31, 47, 0.85);
@@ -226,148 +211,23 @@ $first_name = explode(' ', $student_name)[0];
             animation: floatBox 20s infinite ease-in-out;
         }
 
-        /* Box 1 - Top Left */
-        .box-1 {
-            width: 120px;
-            height: 120px;
-            top: 5%;
-            left: 3%;
-            transform: rotate(15deg);
-            animation-delay: 0s;
-            background: rgba(255, 85, 50, 0.02);
-            border-width: 2px;
-        }
-
-        /* Box 2 - Top Right */
-        .box-2 {
-            width: 180px;
-            height: 180px;
-            top: 2%;
-            right: 5%;
-            transform: rotate(-10deg);
-            animation-delay: 2s;
-            background: rgba(255, 85, 50, 0.03);
-            border-width: 3px;
-        }
-
-        /* Box 3 - Middle Left */
-        .box-3 {
-            width: 200px;
-            height: 200px;
-            top: 40%;
-            left: -50px;
-            transform: rotate(25deg);
-            animation-delay: 4s;
-            background: rgba(255, 85, 50, 0.02);
-            border-width: 2px;
-        }
-
-        /* Box 4 - Middle Right */
-        .box-4 {
-            width: 150px;
-            height: 150px;
-            top: 50%;
-            right: 2%;
-            transform: rotate(-20deg);
-            animation-delay: 1s;
-            background: rgba(255, 85, 50, 0.03);
-            border-width: 3px;
-        }
-
-        /* Box 5 - Bottom Left */
-        .box-5 {
-            width: 250px;
-            height: 250px;
-            bottom: -50px;
-            left: 10%;
-            transform: rotate(30deg);
-            animation-delay: 3s;
-            background: rgba(255, 85, 50, 0.02);
-            border-width: 2px;
-        }
-
-        /* Box 6 - Bottom Right */
-        .box-6 {
-            width: 160px;
-            height: 160px;
-            bottom: 15%;
-            right: 10%;
-            transform: rotate(-15deg);
-            animation-delay: 5s;
-            background: rgba(255, 85, 50, 0.03);
-            border-width: 3px;
-        }
-
-        /* Box 7 - Center */
-        .box-7 {
-            width: 300px;
-            height: 300px;
-            top: 30%;
-            left: 35%;
-            transform: rotate(5deg);
-            animation-delay: 2.5s;
-            background: rgba(255, 85, 50, 0.01);
-            border-width: 1px;
-            border-color: rgba(255, 85, 50, 0.05);
-        }
-
-        /* Box 8 - Top Center */
-        .box-8 {
-            width: 100px;
-            height: 100px;
-            top: 15%;
-            left: 45%;
-            transform: rotate(45deg);
-            animation-delay: 1.5s;
-            background: rgba(255, 85, 50, 0.04);
-            border-width: 2px;
-        }
-
-        /* Box 9 - Bottom Center */
-        .box-9 {
-            width: 140px;
-            height: 140px;
-            bottom: 20%;
-            left: 40%;
-            transform: rotate(-30deg);
-            animation-delay: 3.5s;
-            background: rgba(255, 85, 50, 0.02);
-            border-width: 2px;
-        }
-
-        /* Box 10 - Scattered */
-        .box-10 {
-            width: 80px;
-            height: 80px;
-            top: 70%;
-            left: 15%;
-            transform: rotate(60deg);
-            animation-delay: 4.5s;
-            background: rgba(255, 85, 50, 0.03);
-            border-width: 2px;
-        }
+        .box-1 { width: 120px; height: 120px; top: 5%; left: 3%; transform: rotate(15deg); animation-delay: 0s; }
+        .box-2 { width: 180px; height: 180px; top: 2%; right: 5%; transform: rotate(-10deg); animation-delay: 2s; }
+        .box-3 { width: 200px; height: 200px; top: 40%; left: -50px; transform: rotate(25deg); animation-delay: 4s; }
+        .box-4 { width: 150px; height: 150px; top: 50%; right: 2%; transform: rotate(-20deg); animation-delay: 1s; }
+        .box-5 { width: 250px; height: 250px; bottom: -50px; left: 10%; transform: rotate(30deg); animation-delay: 3s; }
+        .box-6 { width: 160px; height: 160px; bottom: 15%; right: 10%; transform: rotate(-15deg); animation-delay: 5s; }
+        .box-7 { width: 300px; height: 300px; top: 30%; left: 35%; transform: rotate(5deg); animation-delay: 2.5s; }
+        .box-8 { width: 100px; height: 100px; top: 15%; left: 45%; transform: rotate(45deg); animation-delay: 1.5s; }
+        .box-9 { width: 140px; height: 140px; bottom: 20%; left: 40%; transform: rotate(-30deg); animation-delay: 3.5s; }
+        .box-10 { width: 80px; height: 80px; top: 70%; left: 15%; transform: rotate(60deg); animation-delay: 4.5s; }
 
         @keyframes floatBox {
-            0% {
-                transform: translateY(0) rotate(0deg) scale(1);
-                opacity: 0.3;
-            }
-            25% {
-                transform: translateY(-30px) rotate(5deg) scale(1.05);
-                opacity: 0.5;
-            }
-            50% {
-                transform: translateY(20px) rotate(-5deg) scale(0.95);
-                opacity: 0.4;
-            }
-            75% {
-                transform: translateY(-15px) rotate(8deg) scale(1.02);
-                opacity: 0.5;
-            }
-            100% {
-                transform: translateY(0) rotate(0deg) scale(1);
-                opacity: 0.3;
-            }
+            0% { transform: translateY(0) rotate(0deg) scale(1); opacity: 0.3; }
+            25% { transform: translateY(-30px) rotate(5deg) scale(1.05); opacity: 0.5; }
+            50% { transform: translateY(20px) rotate(-5deg) scale(0.95); opacity: 0.4; }
+            75% { transform: translateY(-15px) rotate(8deg) scale(1.02); opacity: 0.5; }
+            100% { transform: translateY(0) rotate(0deg) scale(1); opacity: 0.3; }
         }
 
         /* Particle Layer */
@@ -389,8 +249,7 @@ $first_name = explode(' ', $student_name)[0];
             animation: floatParticle 15s infinite linear;
         }
 
-        /* Generate 30 particles with different sizes and positions */
-        .particle-1 { width: 4px; height: 4px; top: 10%; left: 20%; animation-duration: 12s; animation-delay: 0s; }
+        .particle-1 { width: 4px; height: 4px; top: 10%; left: 20%; animation-duration: 12s; }
         .particle-2 { width: 6px; height: 6px; top: 30%; left: 50%; animation-duration: 18s; animation-delay: 2s; }
         .particle-3 { width: 3px; height: 3px; top: 70%; left: 80%; animation-duration: 14s; animation-delay: 1s; }
         .particle-4 { width: 8px; height: 8px; top: 15%; left: 90%; animation-duration: 20s; animation-delay: 3s; }
@@ -400,48 +259,13 @@ $first_name = explode(' ', $student_name)[0];
         .particle-8 { width: 9px; height: 9px; top: 25%; left: 70%; animation-duration: 15s; animation-delay: 0.5s; }
         .particle-9 { width: 5px; height: 5px; top: 90%; left: 10%; animation-duration: 19s; animation-delay: 3.5s; }
         .particle-10 { width: 6px; height: 6px; top: 5%; left: 40%; animation-duration: 11s; animation-delay: 1.2s; }
-        .particle-11 { width: 4px; height: 4px; top: 40%; left: 85%; animation-duration: 16s; animation-delay: 2.2s; }
-        .particle-12 { width: 7px; height: 7px; top: 75%; left: 55%; animation-duration: 14s; animation-delay: 3.8s; }
-        .particle-13 { width: 5px; height: 5px; top: 20%; left: 10%; animation-duration: 18s; animation-delay: 0.8s; }
-        .particle-14 { width: 8px; height: 8px; top: 55%; left: 25%; animation-duration: 12s; animation-delay: 4.2s; }
-        .particle-15 { width: 3px; height: 3px; top: 80%; left: 45%; animation-duration: 20s; animation-delay: 1.8s; }
-        .particle-16 { width: 6px; height: 6px; top: 35%; left: 60%; animation-duration: 15s; animation-delay: 2.8s; }
-        .particle-17 { width: 5px; height: 5px; top: 65%; left: 75%; animation-duration: 17s; animation-delay: 0.2s; }
-        .particle-18 { width: 7px; height: 7px; top: 50%; left: 5%; animation-duration: 13s; animation-delay: 3.2s; }
-        .particle-19 { width: 4px; height: 4px; top: 95%; left: 65%; animation-duration: 19s; animation-delay: 4.5s; }
-        .particle-20 { width: 8px; height: 8px; top: 12%; left: 55%; animation-duration: 11s; animation-delay: 1.4s; }
-        .particle-21 { width: 5px; height: 5px; top: 72%; left: 35%; animation-duration: 16s; animation-delay: 2.6s; }
-        .particle-22 { width: 6px; height: 6px; top: 28%; left: 80%; animation-duration: 14s; animation-delay: 3.4s; }
-        .particle-23 { width: 4px; height: 4px; top: 88%; left: 85%; animation-duration: 18s; animation-delay: 0.6s; }
-        .particle-24 { width: 7px; height: 7px; top: 42%; left: 45%; animation-duration: 12s; animation-delay: 4.8s; }
-        .particle-25 { width: 5px; height: 5px; top: 18%; left: 30%; animation-duration: 20s; animation-delay: 2.4s; }
-        .particle-26 { width: 9px; height: 9px; top: 58%; left: 20%; animation-duration: 15s; animation-delay: 1.6s; }
-        .particle-27 { width: 3px; height: 3px; top: 78%; left: 70%; animation-duration: 17s; animation-delay: 3.6s; }
-        .particle-28 { width: 6px; height: 6px; top: 32%; left: 95%; animation-duration: 13s; animation-delay: 0.4s; }
-        .particle-29 { width: 4px; height: 4px; top: 92%; left: 15%; animation-duration: 19s; animation-delay: 4.2s; }
-        .particle-30 { width: 8px; height: 8px; top: 8%; left: 75%; animation-duration: 11s; animation-delay: 2.9s; }
 
         @keyframes floatParticle {
-            0% {
-                transform: translateY(0) translateX(0) rotate(0deg);
-                opacity: 0.2;
-            }
-            25% {
-                transform: translateY(-50px) translateX(30px) rotate(90deg);
-                opacity: 0.5;
-            }
-            50% {
-                transform: translateY(40px) translateX(-40px) rotate(180deg);
-                opacity: 0.3;
-            }
-            75% {
-                transform: translateY(-30px) translateX(20px) rotate(270deg);
-                opacity: 0.5;
-            }
-            100% {
-                transform: translateY(0) translateX(0) rotate(360deg);
-                opacity: 0.2;
-            }
+            0% { transform: translateY(0) translateX(0) rotate(0deg); opacity: 0.2; }
+            25% { transform: translateY(-50px) translateX(30px) rotate(90deg); opacity: 0.5; }
+            50% { transform: translateY(40px) translateX(-40px) rotate(180deg); opacity: 0.3; }
+            75% { transform: translateY(-30px) translateX(20px) rotate(270deg); opacity: 0.5; }
+            100% { transform: translateY(0) translateX(0) rotate(360deg); opacity: 0.2; }
         }
 
         /* Grid Lines Layer */
@@ -465,21 +289,6 @@ $first_name = explode(' ', $student_name)[0];
             100% { transform: translateX(0) translateY(0); }
         }
 
-        /* Mobile-specific background adjustments */
-        @media (max-width: 768px) {
-            .box-1, .box-2, .box-3, .box-4, .box-5, .box-6, .box-7, .box-8, .box-9, .box-10 {
-                opacity: 0.15;
-            }
-            
-            .particle {
-                opacity: 0.1;
-            }
-            
-            .grid-layer {
-                background-size: 30px 30px;
-            }
-        }
-
         /* Main App Container */
         .app-container {
             max-width: 600px;
@@ -490,7 +299,7 @@ $first_name = explode(' ', $student_name)[0];
             z-index: 10;
         }
 
-        /* ===== COOL HEADER WITH WHITE BG ===== */
+        /* Header */
         .quiz-header {
             position: fixed;
             top: 0;
@@ -513,35 +322,8 @@ $first_name = explode(' ', $student_name)[0];
             justify-content: space-between;
         }
 
-        .logo-area {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .logo-icon {
-            background: var(--orange);
-            width: 42px;
-            height: 42px;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.6rem;
-            font-weight: 800;
-            color: white;
-            box-shadow: 0 6px 15px var(--orange-glow);
-        }
-
-        .logo-text {
-            font-size: 1.5rem;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-            color: #1e293b;
-        }
-
-        .logo-text span {
-            color: var(--orange);
+        .logo-area img {
+            height: 45px;
         }
 
         .user-badge {
@@ -573,34 +355,29 @@ $first_name = explode(' ', $student_name)[0];
             color: #1e293b;
         }
 
-        .user-badge i {
-            color: var(--orange);
-            font-size: 0.8rem;
-        }
-
-        /* Shuffle Indicator */
-        .shuffle-badge {
+        /* Random Selection Badge */
+        .random-badge {
             display: inline-flex;
             align-items: center;
-            gap: 5px;
+            gap: 8px;
             background: rgba(255, 85, 50, 0.15);
-            padding: 4px 10px;
+            border: 1px solid var(--orange);
             border-radius: 40px;
-            font-size: 0.75rem;
-            color: var(--text-secondary);
-            border: 1px solid var(--glass-border);
-            margin-left: 10px;
+            padding: 8px 16px;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+            backdrop-filter: blur(5px);
         }
 
-        .shuffle-badge i {
+        .random-badge i {
             color: var(--orange);
-            font-size: 0.8rem;
+            font-size: 1rem;
         }
 
         /* Timer Card */
         .timer-card {
-             backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+            background: var(--glass-bg);
             border-radius: 30px;
             padding: 16px 20px;
             margin-bottom: 20px;
@@ -650,7 +427,6 @@ $first_name = explode(' ', $student_name)[0];
             font-weight: 700;
             color: var(--orange);
             line-height: 1.2;
-            transition: color 0.3s ease;
         }
 
         .progress-pill {
@@ -672,7 +448,8 @@ $first_name = explode(' ', $student_name)[0];
 
         /* Progress Bar */
         .progress-container {
-             backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+            background: var(--glass-bg);
             border-radius: 20px;
             padding: 16px;
             margin-bottom: 20px;
@@ -731,8 +508,8 @@ $first_name = explode(' ', $student_name)[0];
 
         /* Question Card */
         .question-card {
-             backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+            background: var(--glass-bg);
             border-radius: 32px;
             padding: 28px 24px;
             margin-bottom: 20px;
@@ -742,14 +519,8 @@ $first_name = explode(' ', $student_name)[0];
         }
 
         @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateX(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
+            from { opacity: 0; transform: translateX(20px); }
+            to { opacity: 1; transform: translateX(0); }
         }
 
         .question-number {
@@ -804,14 +575,8 @@ $first_name = explode(' ', $student_name)[0];
         .option-item:nth-child(4) { animation-delay: 0.4s; }
 
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         .option-item input[type="radio"] {
@@ -948,11 +713,6 @@ $first_name = explode(' ', $student_name)[0];
             box-shadow: 0 0 25px var(--orange);
         }
 
-        .question-dot:hover {
-            transform: scale(1.1);
-            border-color: var(--orange);
-        }
-
         /* Quick Nav FAB */
         .quick-nav-fab {
             position: fixed;
@@ -978,12 +738,8 @@ $first_name = explode(' ', $student_name)[0];
             transform: scale(1.1);
         }
 
-        .quick-nav-fab:active {
-            transform: scale(0.95);
-        }
-
-        /* ===== BACK BUTTON POPUP ===== */
-        .back-popup-overlay {
+        /* Popups */
+        .popup-overlay {
             position: fixed;
             top: 0;
             left: 0;
@@ -1000,12 +756,12 @@ $first_name = explode(' ', $student_name)[0];
             transition: all 0.4s ease;
         }
 
-        .back-popup-overlay.show {
+        .popup-overlay.show {
             opacity: 1;
             visibility: visible;
         }
 
-        .back-popup-card {
+        .popup-card {
             background: linear-gradient(145deg, var(--dark-card), #1a2637);
             border-radius: 48px;
             padding: 40px 32px;
@@ -1020,23 +776,11 @@ $first_name = explode(' ', $student_name)[0];
             overflow: hidden;
         }
 
-        .back-popup-overlay.show .back-popup-card {
+        .popup-overlay.show .popup-card {
             transform: scale(1) translateY(0);
         }
 
-        .back-popup-card::before {
-            content: '';
-            position: absolute;
-            top: -30%;
-            right: -30%;
-            width: 200px;
-            height: 200px;
-            background: radial-gradient(circle, rgba(255,85,50,0.2) 0%, transparent 70%);
-            border-radius: 50%;
-            pointer-events: none;
-        }
-
-        .back-popup-icon {
+        .popup-icon {
             width: 100px;
             height: 100px;
             background: rgba(255, 85, 50, 0.15);
@@ -1055,40 +799,36 @@ $first_name = explode(' ', $student_name)[0];
             100% { box-shadow: 0 0 0 0 rgba(255, 85, 50, 0); }
         }
 
-        .back-popup-icon i {
+        .popup-icon i {
             font-size: 4rem;
             color: var(--orange);
         }
 
-        .back-popup-title {
-            font-size: 2.4rem;
+        .popup-title {
+            font-size: 2rem;
             font-weight: 800;
             margin-bottom: 15px;
             color: white;
-            line-height: 1.2;
         }
 
-        .back-popup-title span {
+        .popup-title span {
             color: var(--orange);
         }
 
-        .back-popup-message {
+        .popup-message {
             color: var(--text-secondary);
             margin-bottom: 30px;
             line-height: 1.7;
             font-size: 1.1rem;
-            max-width: 320px;
-            margin-left: auto;
-            margin-right: auto;
         }
 
-        .back-popup-buttons {
+        .popup-buttons {
             display: flex;
             gap: 15px;
             margin-top: 15px;
         }
 
-        .back-popup-btn {
+        .popup-btn {
             flex: 1;
             padding: 18px;
             border-radius: 60px;
@@ -1103,262 +843,24 @@ $first_name = explode(' ', $student_name)[0];
             gap: 10px;
         }
 
-        .back-popup-btn-primary {
+        .popup-btn-primary {
             background: linear-gradient(135deg, var(--orange), var(--orange-dark));
             color: white;
             box-shadow: 0 10px 25px var(--orange-glow);
         }
 
-        .back-popup-btn-primary:hover {
+        .popup-btn-primary:hover {
             transform: translateY(-3px);
             box-shadow: 0 15px 35px var(--orange);
-        }
-
-        .back-popup-btn-secondary {
-            background: rgba(255, 255, 255, 0.05);
-            color: var(--text-primary);
-            border: 2px solid var(--glass-border);
-        }
-
-        .back-popup-btn-secondary:hover {
-            background: rgba(255, 85, 50, 0.15);
-            border-color: var(--orange);
-            transform: translateY(-3px);
-        }
-
-        /* General Popups */
-        .popup-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(11, 17, 32, 0.95);
-            backdrop-filter: blur(12px);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 2000;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-        }
-
-        .popup-overlay.show {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .popup-card {
-             border-radius: 36px;
-            padding: 32px 28px;
-            max-width: 400px;
-            width: 90%;
-            border: 2px solid var(--orange);
-            text-align: center;
-            transform: scale(0.9);
-            transition: all 0.3s ease;
-            box-shadow: 0 20px 40px rgba(255, 85, 50, 0.2);
-        }
-
-        .popup-overlay.show .popup-card {
-            transform: scale(1);
-        }
-
-        .popup-icon {
-            width: 80px;
-            height: 80px;
-            background: rgba(255, 85, 50, 0.15);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-            border: 2px solid var(--orange);
-        }
-
-        .popup-icon i {
-            font-size: 3rem;
-            color: var(--orange);
-        }
-
-        .popup-title {
-            font-size: 2rem;
-            font-weight: 800;
-            margin-bottom: 15px;
-            color: var(--text-primary);
-        }
-
-        .popup-message {
-            color: var(--text-muted);
-            margin-bottom: 25px;
-            line-height: 1.6;
-            font-size: 1rem;
-        }
-
-        .popup-buttons {
-            display: flex;
-            gap: 12px;
-        }
-
-        .popup-btn {
-            flex: 1;
-            padding: 16px;
-            border-radius: 40px;
-            font-weight: 700;
-            border: none;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            font-size: 1rem;
-        }
-
-        .popup-btn-primary {
-            background: var(--orange);
-            color: white;
-        }
-
-        .popup-btn-primary:hover {
-            background: var(--orange-dark);
-            transform: translateY(-2px);
         }
 
         .popup-btn-secondary {
             background: rgba(255, 255, 255, 0.05);
             color: var(--text-primary);
-            border: 1px solid var(--glass-border);
+            border: 2px solid var(--glass-border);
         }
 
-        .popup-btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.1);
-        }
-
-        .countdown-text {
-            font-size: 1.2rem;
-            color: var(--orange);
-            font-weight: 700;
-            margin-top: 20px;
-        }
-
-        /* Already Submitted Card */
-        .submitted-card {
-            background: linear-gradient(145deg, var(--dark-card), #1a2637);
-            border-radius: 48px;
-            padding: 40px 30px;
-            margin: 20px 0;
-            border: 3px solid var(--orange);
-            text-align: center;
-            box-shadow: 0 30px 60px rgba(255, 85, 50, 0.3);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .submitted-card::before {
-            content: '';
-            position: absolute;
-            top: -30%;
-            right: -30%;
-            width: 300px;
-            height: 300px;
-            background: radial-gradient(circle, rgba(255,85,50,0.15) 0%, transparent 70%);
-            border-radius: 50%;
-            pointer-events: none;
-        }
-
-        .submitted-icon {
-            width: 100px;
-            height: 100px;
-            background: rgba(255, 85, 50, 0.15);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 25px;
-            border: 3px solid var(--orange);
-            animation: submittedPulse 2s infinite;
-        }
-
-        @keyframes submittedPulse {
-            0% { box-shadow: 0 0 0 0 var(--orange-glow); }
-            70% { box-shadow: 0 0 0 20px rgba(255, 85, 50, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(255, 85, 50, 0); }
-        }
-
-        .submitted-icon i {
-            font-size: 4rem;
-            color: var(--orange);
-        }
-
-        .submitted-title {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 15px;
-            color: white;
-            line-height: 1.2;
-        }
-
-        .submitted-title span {
-            color: var(--orange);
-        }
-
-        .submitted-message {
-            color: var(--text-secondary);
-            margin-bottom: 25px;
-            line-height: 1.7;
-            font-size: 1.1rem;
-            max-width: 400px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .submitted-info {
-            background: rgba(255, 85, 50, 0.1);
-            border-radius: 30px;
-            padding: 20px;
-            margin: 25px 0;
-            border: 1px solid var(--glass-border);
-        }
-
-        .submitted-info p {
-            color: var(--text-secondary);
-            margin-bottom: 10px;
-            font-size: 1rem;
-        }
-
-        .submitted-info i {
-            color: var(--orange);
-            margin-right: 10px;
-        }
-
-        .submitted-btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            background: linear-gradient(135deg, var(--orange), var(--orange-dark));
-            color: white;
-            padding: 18px 36px;
-            border-radius: 60px;
-            font-weight: 700;
-            font-size: 1.2rem;
-            text-decoration: none;
-            transition: all 0.25s ease;
-            box-shadow: 0 10px 25px var(--orange-glow);
-            border: none;
-            cursor: pointer;
-            width: auto;
-            min-width: 250px;
-        }
-
-        .submitted-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 35px var(--orange);
-        }
-
-        .submitted-btn i {
-            font-size: 1.3rem;
-        }
-
-        /* Return Button Card (After Submission) */
+        /* Return Card */
         .return-card {
             background: linear-gradient(145deg, var(--dark-card), #1a2637);
             border-radius: 36px;
@@ -1415,8 +917,6 @@ $first_name = explode(' ', $student_name)[0];
             box-shadow: 0 10px 25px var(--orange-glow);
             border: none;
             cursor: pointer;
-            width: auto;
-            min-width: 200px;
         }
 
         .return-btn:hover {
@@ -1424,150 +924,21 @@ $first_name = explode(' ', $student_name)[0];
             box-shadow: 0 15px 35px var(--orange);
         }
 
-        .return-btn i {
-            font-size: 1.2rem;
-        }
-
         /* Mobile Optimizations */
         @media (max-width: 480px) {
-            .app-container {
-                padding: 12px;
-                padding-top: 85px;
-            }
-
-            .logo-text {
-                font-size: 1.3rem;
-            }
-
-            .logo-icon {
-                width: 38px;
-                height: 38px;
-                font-size: 1.4rem;
-            }
-
-            .user-name {
-                display: none;
-            }
-
-            .user-badge {
-                padding: 4px 10px 4px 6px;
-            }
-
-            .timer-card {
-                padding: 14px 16px;
-            }
-
-            .timer-icon {
-                width: 46px;
-                height: 46px;
-            }
-
-            .timer-value {
-                font-size: 1.7rem;
-            }
-
-            .question-card {
-                padding: 22px 18px;
-            }
-
-            .question-text {
-                font-size: 1.15rem;
-            }
-
-            .option-label {
-                 font-size: 0.95rem;
-            }
-
-            .nav-btn {
-                padding: 14px;
-                font-size: 0.95rem;
-            }
-
-            .question-dot {
-                width: 40px;
-                height: 40px;
-                font-size: 0.95rem;
-            }
-
-            .quick-nav-fab {
-                width: 52px;
-                height: 52px;
-                font-size: 1.5rem;
-                bottom: 15px;
-                right: 15px;
-            }
-
-            .back-popup-card {
-                padding: 30px 20px;
-            }
-
-            .back-popup-title {
-                font-size: 2rem;
-            }
-
-            .back-popup-message {
-                font-size: 1rem;
-            }
-
-            .back-popup-buttons {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            .submitted-card {
-                padding: 30px 20px;
-            }
-
-            .submitted-title {
-                font-size: 2rem;
-            }
-
-            .submitted-message {
-                font-size: 1rem;
-            }
-
-            .submitted-btn {
-                padding: 16px 28px;
-                font-size: 1.1rem;
-                width: 100%;
-            }
-
-            .return-card {
-                padding: 25px 20px;
-            }
-
-            .return-title {
-                font-size: 1.5rem;
-            }
-
-            .return-btn {
-                padding: 14px 28px;
-                font-size: 1rem;
-                width: 100%;
-            }
-        }
-
-        /* Touch Optimizations */
-        @media (hover: none) and (pointer: coarse) {
-            .option-label:hover {
-                transform: none;
-            }
-            
-            .nav-btn:hover {
-                transform: none;
-            }
-            
-            .question-dot:hover {
-                transform: none;
-            }
+            .app-container { padding: 12px; padding-top: 85px; }
+            .user-name { display: none; }
+            .timer-value { font-size: 1.7rem; }
+            .question-text { font-size: 1.15rem; }
+            .question-dot { width: 38px; height: 38px; }
+            .quick-nav-fab { width: 52px; height: 52px; font-size: 1.5rem; bottom: 15px; right: 15px; }
         }
     </style>
 </head>
 <body>
-    <!-- ===== ENHANCED BACKGROUND WITH BOXES, PARTICLES AND GRID ===== -->
+    <!-- Animated Background -->
     <div class="bg-container">
         <div class="bg-gradient"></div>
-        
         <div class="boxes-layer">
             <div class="box box-1"></div>
             <div class="box box-2"></div>
@@ -1580,7 +951,6 @@ $first_name = explode(' ', $student_name)[0];
             <div class="box box-9"></div>
             <div class="box box-10"></div>
         </div>
-        
         <div class="particles-layer">
             <div class="particle particle-1"></div>
             <div class="particle particle-2"></div>
@@ -1592,38 +962,16 @@ $first_name = explode(' ', $student_name)[0];
             <div class="particle particle-8"></div>
             <div class="particle particle-9"></div>
             <div class="particle particle-10"></div>
-            <div class="particle particle-11"></div>
-            <div class="particle particle-12"></div>
-            <div class="particle particle-13"></div>
-            <div class="particle particle-14"></div>
-            <div class="particle particle-15"></div>
-            <div class="particle particle-16"></div>
-            <div class="particle particle-17"></div>
-            <div class="particle particle-18"></div>
-            <div class="particle particle-19"></div>
-            <div class="particle particle-20"></div>
-            <div class="particle particle-21"></div>
-            <div class="particle particle-22"></div>
-            <div class="particle particle-23"></div>
-            <div class="particle particle-24"></div>
-            <div class="particle particle-25"></div>
-            <div class="particle particle-26"></div>
-            <div class="particle particle-27"></div>
-            <div class="particle particle-28"></div>
-            <div class="particle particle-29"></div>
-            <div class="particle particle-30"></div>
         </div>
-        
         <div class="grid-layer"></div>
     </div>
 
-    <!-- Cool Header with White BG -->
+    <!-- Header -->
     <header class="quiz-header">
         <div class="header-content">
             <div class="logo-area">
-                            <img src="../assests/logo.png" alt="NetCoders" height="50px"class="logo-img" onerror="this.src='https://via.placeholder.com/120x48?text=NETCODERS'">
-
-              </div>
+                <img src="../assests/logo1.png" alt="NetCoders" onerror="this.src='https://via.placeholder.com/120x40?text=NETCODERS'">
+            </div>
             <div class="user-badge">
                 <div class="user-avatar"><?= strtoupper(substr($first_name, 0, 1)) ?></div>
                 <span class="user-name"><?= htmlspecialchars($first_name) ?></span>
@@ -1633,131 +981,107 @@ $first_name = explode(' ', $student_name)[0];
     </header>
 
     <div class="app-container">
-        <?php if ($show_already_submitted): ?>
-            <!-- ALREADY SUBMITTED CARD - SHOW WHEN USER TRIES TO RETAKE -->
-            <div class="submitted-card">
-                <div class="submitted-icon">
-                    <i class="bi bi-check-circle-fill"></i>
+        <!-- Random Selection Badge -->
+        <div class="random-badge">
+            <i class="bi bi-shuffle"></i>
+            <span>20 Random Questions Selected for You</span>
+        </div>
+
+        <!-- Timer Card -->
+        <div class="timer-card">
+            <div class="timer-info">
+                <div class="timer-icon">
+                    <i class="bi bi-hourglass-split"></i>
                 </div>
-                <h1 class="submitted-title">Already <span>Submitted!</span></h1>
-                <p class="submitted-message">You have already taken and submitted this test. Each test can only be attempted once.</p>
-                
-                <div class="submitted-info">
-                    <p><i class="bi bi-calendar-check"></i> Test completed successfully</p>
-                    <p><i class="bi bi-lock-fill"></i> Test is now locked</p>
-                    <p><i class="bi bi-trophy-fill"></i> Great job!</p>
-                </div>
-                
-                <a href="../student/index.php" class="submitted-btn">
-                    <i class="bi bi-arrow-left"></i> Return to Dashboard
-                </a>
-                
-                <div style="margin-top: 20px; font-size: 0.9rem; color: var(--text-muted);">
-                    <i class="bi bi-exclamation-circle"></i> Multiple attempts are not allowed
+                <div class="timer-text">
+                    <span class="timer-label">Time Remaining</span>
+                    <span class="timer-value" id="timerDisplay"><?= sprintf('%02d:%02d', $minutes, $seconds) ?></span>
                 </div>
             </div>
-        <?php else: ?>
-            <!-- Timer Card -->
-            <div class="timer-card">
-                <div class="timer-info">
-                    <div class="timer-icon">
-                        <i class="bi bi-hourglass-split"></i>
+            <div class="progress-pill">
+                <span id="currentQuestionNum">1</span>/<span id="totalQuestions"><?= $total_questions ?></span>
+            </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-header">
+                <span>Overall Progress</span>
+                <strong id="progressPercentage">0%</strong>
+            </div>
+            <div class="progress-bar-bg">
+                <div class="progress-fill" id="quizProgress" style="width: 0%"></div>
+            </div>
+        </div>
+
+        <!-- Questions Form -->
+        <form id="quizForm" method="POST" action="submit_quiz.php">
+            <?php 
+            $index = 1; 
+            foreach ($questions as $q): 
+            ?>
+                <div class="question-card" id="q_<?= $index ?>" data-original-id="<?= $q['id'] ?>" style="display: <?= $index === 1 ? 'block' : 'none' ?>;">
+                    <div class="question-number">
+                        <i class="bi bi-question-circle"></i>
+                        <span>Question <strong><?= $index ?></strong> of <?= $total_questions ?></span>
                     </div>
-                    <div class="timer-text">
-                        <span class="timer-label">Time Remaining</span>
-                        <span class="timer-value" id="timerDisplay"><?= sprintf('%02d:%02d', $minutes, $seconds) ?></span>
+                    <div class="question-text">
+                        <?= htmlspecialchars($q['question_text']) ?>
+                    </div>
+                    <div class="options-container">
+                        <?php foreach ($q['shuffled_options'] as $opt): ?>
+                            <div class="option-item">
+                                <input type="radio" 
+                                       name="question_<?= $q['id'] ?>" 
+                                       value="option_<?= $opt['key'] ?>" 
+                                       id="q<?= $q['id'] ?>_<?= $opt['key'] ?>"
+                                       data-original-question="<?= $index ?>">
+                                <label for="q<?= $q['id'] ?>_<?= $opt['key'] ?>" class="option-label">
+                                    <?= htmlspecialchars($opt['value']) ?>
+                                </label>
+                            </div>
+                        <?php endforeach; ?>
                     </div>
                 </div>
-                <div class="progress-pill">
-                    <span id="currentQuestionNum">1</span>/<span id="totalQuestions"><?= $total_questions ?></span>
-                  
-                </div>
+            <?php 
+            $index++; 
+            endforeach; 
+            ?>
+
+            <input type="hidden" name="quiz_id" value="<?= $quiz_id ?>">
+            <input type="hidden" name="student_id" value="<?= $student_id ?>">
+            <input type="hidden" id="remaining_time" name="remaining_time" value="<?= $remaining_time ?>">
+
+            <!-- Navigation Buttons -->
+            <div class="nav-buttons">
+                <button type="button" id="prevBtn" class="nav-btn" disabled>
+                    <i class="bi bi-chevron-left"></i> Prev
+                </button>
+                <button type="button" id="nextBtn" class="nav-btn">
+                    Next <i class="bi bi-chevron-right"></i>
+                </button>
+                <button type="button" id="submitBtn" class="nav-btn submit-btn">
+                    <i class="bi bi-check-lg"></i> Submit
+                </button>
             </div>
+        </form>
 
-            <!-- Progress Bar -->
-            <div class="progress-container">
-                <div class="progress-header">
-                    <span>Overall Progress</span>
-                    <strong id="progressPercentage">0%</strong>
-                </div>
-                <div class="progress-bar-bg">
-                    <div class="progress-fill" id="quizProgress" style="width: 0%"></div>
-                </div>
+        <!-- Question Dots -->
+        <div class="dots-container" id="questionDots"></div>
+
+        <!-- Return Card -->
+        <div class="return-card" id="returnCard" style="display: none;">
+            <div class="return-icon">
+                <i class="bi bi-check-circle"></i>
             </div>
-
-            <!-- Questions Form -->
-            <form id="quizForm" method="POST" action="submit_quiz.php">
-                <?php 
-                $index = 1; 
-                foreach ($questions as $q): 
-                ?>
-                    <div class="question-card" id="q_<?= $index ?>" data-original-id="<?= $q['id'] ?>" style="display: <?= $index === 1 ? 'block' : 'none' ?>;">
-                        <div class="question-number">
-                            <i class="bi bi-question-circle"></i>
-                            <span>Question <strong><?= $index ?></strong> of <?= $total_questions ?></span>
-                        </div>
-                        <div class="question-text">
-                            <?= htmlspecialchars($q['question_text']) ?>
-                        </div>
-                        <div class="options-container">
-                            <?php 
-                            // Use shuffled options
-                            foreach ($q['shuffled_options'] as $opt): 
-                            ?>
-                                <div class="option-item">
-                                    <input type="radio" 
-                                           name="question_<?= $q['id'] ?>" 
-                                           value="<?= $opt['key'] ?>" 
-                                           id="q<?= $q['id'] ?>_<?= $opt['key'] ?>"
-                                           data-original-question="<?= $index ?>">
-                                    <label for="q<?= $q['id'] ?>_<?= $opt['key'] ?>" class="option-label">
-                                        <?= htmlspecialchars($opt['value']) ?>
-                                    </label>
-                                </div>
-                            <?php endforeach; ?>
-                        </div>
-                    </div>
-                <?php 
-                $index++; 
-                endforeach; 
-                ?>
-
-                <input type="hidden" name="quiz_id" value="<?= $quiz_id ?>">
-                <input type="hidden" name="student_id" value="<?= $student_id ?>">
-                <input type="hidden" id="remaining_time" name="remaining_time" value="<?= $remaining_time ?>">
-
-                <!-- Navigation Buttons -->
-                <div class="nav-buttons">
-                    <button type="button" id="prevBtn" class="nav-btn" disabled>
-                        <i class="bi bi-chevron-left"></i> Prev
-                    </button>
-                    <button type="button" id="nextBtn" class="nav-btn">
-                        Next <i class="bi bi-chevron-right"></i>
-                    </button>
-                    <button type="button" id="submitBtn" class="nav-btn submit-btn">
-                        <i class="bi bi-check-lg"></i> Submit
-                    </button>
-                </div>
-            </form>
-
-            <!-- Question Dots -->
-            <div class="dots-container" id="questionDots"></div>
-
-            <!-- Return Card (Hidden by default, shown after submission) -->
-            <div class="return-card" id="returnCard" style="display: none;">
-                <div class="return-icon">
-                    <i class="bi bi-check-circle"></i>
-                </div>
-                <h3 class="return-title">Quiz Completed!</h3>
-                <p class="return-text">Thank you for completing the quiz. Your answers have been recorded.</p>
-                <a href="../student/index.php" class="return-btn">
-                    <i class="bi bi-arrow-left"></i> Return to Dashboard
-                </a>
-            </div>
-        <?php endif; ?>
+            <h3 class="return-title">Quiz Completed!</h3>
+            <p class="return-text">Thank you for completing the quiz. Your answers have been recorded.</p>
+            <a href="../student/index.php" class="return-btn">
+                <i class="bi bi-arrow-left"></i> Return to Dashboard
+            </a>
+        </div>
     </div>
 
-    <?php if (!$show_already_submitted): ?>
     <!-- Quick Navigation FAB -->
     <div class="quick-nav-fab" id="quickNavFab">
         <i class="bi bi-grid-3x3-gap-fill"></i>
@@ -1771,13 +1095,13 @@ $first_name = explode(' ', $student_name)[0];
             </div>
             <h3 class="popup-title">Jump to Question</h3>
             <div class="dots-container" id="quickNavDots" style="justify-content: center;"></div>
-            <div class="popup-buttons" style="margin-top: 20px;">
+            <div class="popup-buttons">
                 <button class="popup-btn popup-btn-secondary" id="closeQuickNav">Close</button>
             </div>
         </div>
     </div>
 
-    <!-- Confirmation Popup (Submit) -->
+    <!-- Confirmation Popup -->
     <div class="popup-overlay" id="confirmPopup">
         <div class="popup-card">
             <div class="popup-icon">
@@ -1792,31 +1116,26 @@ $first_name = explode(' ', $student_name)[0];
         </div>
     </div>
 
-    <!-- BACK BUTTON POPUP -->
-    <div class="back-popup-overlay" id="backPopup">
-        <div class="back-popup-card">
-            <div class="back-popup-icon">
+    <!-- Back Button Popup -->
+    <div class="popup-overlay" id="backPopup">
+        <div class="popup-card">
+            <div class="popup-icon">
                 <i class="bi bi-arrow-left-circle"></i>
             </div>
-            <h3 class="back-popup-title">Wait! <span>Are you sure?</span></h3>
-            <p class="back-popup-message">If you go back now, your progress will be lost. Do you want to continue the test or submit?</p>
-            <div class="back-popup-buttons">
-                <button class="back-popup-btn back-popup-btn-secondary" id="backCancel">
+            <h3 class="popup-title">Wait! <span>Are you sure?</span></h3>
+            <p class="popup-message">If you go back now, your progress will be lost. Do you want to continue the test?</p>
+            <div class="popup-buttons">
+                <button class="popup-btn popup-btn-secondary" id="backCancel">
                     <i class="bi bi-arrow-left"></i> Go Back
                 </button>
-                <button class="back-popup-btn back-popup-btn-primary" id="backContinue">
+                <button class="popup-btn popup-btn-primary" id="backContinue">
                     <i class="bi bi-play-fill"></i> Continue Test
                 </button>
             </div>
-            <div style="margin-top: 20px; font-size: 0.9rem; color: var(--text-muted);">
-                <i class="bi bi-exclamation-circle"></i> Your answers are safe
-            </div>
         </div>
     </div>
-    <?php endif; ?>
 
     <script>
-        <?php if (!$show_already_submitted): ?>
         // DOM Elements
         const questions = document.querySelectorAll('.question-card');
         const prevBtn = document.getElementById('prevBtn');
@@ -1837,8 +1156,6 @@ $first_name = explode(' ', $student_name)[0];
         const cancelSubmit = document.getElementById('cancelSubmit');
         const confirmSubmit = document.getElementById('confirmSubmit');
         const returnCard = document.getElementById('returnCard');
-        
-        // Back Popup Elements
         const backPopup = document.getElementById('backPopup');
         const backCancel = document.getElementById('backCancel');
         const backContinue = document.getElementById('backContinue');
@@ -1849,14 +1166,7 @@ $first_name = explode(' ', $student_name)[0];
         const totalQuestionsCount = questions.length;
         const answeredQuestions = new Set();
         let timerInterval;
-        let backButtonPressed = false;
         let quizSubmitted = false;
-
-        // Store original question order for reference
-        const originalQuestionIds = [];
-        questions.forEach((q, index) => {
-            originalQuestionIds[index] = q.dataset.originalId;
-        });
 
         // Initialize Question Dots
         function initQuestionDots() {
@@ -1920,13 +1230,10 @@ $first_name = explode(' ', $student_name)[0];
             const seconds = timeRemaining % 60;
             timerDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
             
-            // Color coding
             if (timeRemaining < 60) {
                 timerDisplay.style.color = '#ef4444';
             } else if (timeRemaining < 300) {
                 timerDisplay.style.color = '#f59e0b';
-            } else {
-                timerDisplay.style.color = '#ff5532';
             }
             
             remInput.value = timeRemaining;
@@ -1939,14 +1246,14 @@ $first_name = explode(' ', $student_name)[0];
             timerInterval = setInterval(updateTimer, 1000);
         }
 
-        // Submit Quiz - Modified to show return card
+        // Submit Quiz
         function submitQuiz() {
             if (quizSubmitted) return;
             quizSubmitted = true;
             
             clearInterval(timerInterval);
             
-            // Hide all quiz elements
+            // Hide quiz elements
             document.querySelectorAll('.question-card').forEach(q => q.style.display = 'none');
             document.querySelector('.nav-buttons').style.display = 'none';
             document.querySelector('.dots-container').style.display = 'none';
@@ -1955,7 +1262,7 @@ $first_name = explode(' ', $student_name)[0];
             // Show return card
             returnCard.style.display = 'block';
             
-            // Submit form data
+            // Submit form
             document.getElementById('quizForm').submit();
         }
 
@@ -2006,7 +1313,7 @@ $first_name = explode(' ', $student_name)[0];
             quickNavPopup.classList.remove('show');
         });
 
-        // Close popups when clicking outside
+        // Close popups on outside click
         document.querySelectorAll('.popup-overlay').forEach(overlay => {
             overlay.addEventListener('click', (e) => {
                 if (e.target === overlay) {
@@ -2015,56 +1322,25 @@ $first_name = explode(' ', $student_name)[0];
             });
         });
 
-        // ===== BACK BUTTON DETECTION =====
+        // Back button detection
         window.addEventListener('popstate', function(event) {
-            // Prevent default back behavior
             event.preventDefault();
             
-            if (!quizSubmitted && !backButtonPressed) {
-                backButtonPressed = true;
-                // Pause timer
+            if (!quizSubmitted) {
                 clearInterval(timerInterval);
-                // Show back popup
                 backPopup.classList.add('show');
             }
         });
 
-        // Push a dummy state to enable popstate
         history.pushState({ page: 'quiz' }, 'Quiz', window.location.href);
 
-        // Back popup buttons
         backCancel.addEventListener('click', function() {
-            // User wants to go back - redirect to index.php
             window.location.href = '../student/index.php';
         });
 
         backContinue.addEventListener('click', function() {
-            // User wants to continue - resume timer and close popup
             backPopup.classList.remove('show');
             startTimer();
-            backButtonPressed = false;
-        });
-
-        // Close back popup if clicked outside (optional)
-        backPopup.addEventListener('click', (e) => {
-            if (e.target === backPopup) {
-                backPopup.classList.remove('show');
-                startTimer();
-                backButtonPressed = false;
-            }
-        });
-
-        // Keyboard Navigation
-        document.addEventListener('keydown', (e) => {
-            if (quizSubmitted) return;
-            
-            if (e.key === 'ArrowLeft' && currentIndex > 0 && !backPopup.classList.contains('show')) {
-                currentIndex--;
-                showQuestion(currentIndex);
-            } else if (e.key === 'ArrowRight' && currentIndex < totalQuestionsCount - 1 && !backPopup.classList.contains('show')) {
-                currentIndex++;
-                showQuestion(currentIndex);
-            }
         });
 
         // Initialize
@@ -2072,17 +1348,6 @@ $first_name = explode(' ', $student_name)[0];
         showQuestion(currentIndex);
         startTimer();
         updateProgress();
-
-        // Prevent zoom on double tap
-        document.addEventListener('touchstart', (e) => {
-            if (e.touches.length > 1) {
-                e.preventDefault();
-            }
-        }, { passive: false });
-
-        // Smooth touch scrolling
-        document.querySelector('.app-container').addEventListener('touchstart', () => {}, { passive: true });
-        <?php endif; ?>
     </script>
 </body>
 </html>
